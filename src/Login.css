@@ -1,0 +1,131 @@
+/* Login.css */
+.container-wrapper {
+    overflow-x: hidden;
+    background-color: #f5eafb;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding-right: 5%;
+    max-width: 40%;
+  }
+  
+  .site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4b0082;
+  }
+  
+  .site-description {
+    font-size: 1.4rem;
+    max-width: 350px;
+    margin-top: 1rem;
+    color: #4b0082;
+  }
+  
+  .login-form {
+    flex: 1;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #6A0DAD;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    font-weight: 300;
+    color: #29006C8C;
+    padding: 15px;
+    font-family: 'poppins';
+    border: 1.5px solid #9D6DCD;
+    border-radius: 18px;
+    outline: none;
+    font-size: 24px;
+    
+  }
+  
+  input.error {
+    border-color: #FF0000;
+  }
+  
+  .error-message {
+    color: #FF0000;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    text-align: left;
+    margin-top: -10px;
+  }
+  
+  .forgot-password a {
+    color: #FF00FF;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    background-color: #AB65DA;
+    color: white;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-btn {
+    width: 50%;
+    padding: 15px;
+    margin-left: 70px;
+    border-radius: 22px;
+    background-color: white;
+    color: #AB65DA;
+    border: 1px solid #AB65DA;
+    margin-top: 20px;
+  }
+  
+  .login-button:hover, .signup-btn:hover {
+    opacity: 0.8;
+  }
+  .horizontal-line{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }

@@ -1,0 +1,149 @@
+/* Container wrapper for centering the content */
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5eafb;
+    padding: 0 5%;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  /* Signup container, responsible for positioning the form and text side by side */
+  .signup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 40px;
+  }
+  
+  /* Left section for Price Compare text */
+  .left-section {
+    flex: 1;
+    padding-right: 5%;
+    max-width: 40%; /* Makes sure it's not too wide */
+  }
+  
+  .site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4b0082;
+  }
+  
+  .site-description {
+    font-size: 1.4rem;
+    max-width: 350px;
+    margin-top: 1rem;
+    color: #4b0082;
+  }
+  
+  /* Signup form styling */
+  .signup-form {
+    flex: 1;
+    max-width: 450px; /* Adjusted max width to ensure good balance */
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading inside the form */
+  .signup-form h2 {
+    color: #6A0DAD;
+    margin-bottom: 20px;
+  }
+  
+  /* Flexbox for name inputs to keep them aligned horizontally */
+  .name-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure equal width for each name field */
+  .name-inputs input {
+    flex: 1;
+    min-width: 0; /* Prevents overflow issues */
+  }
+  
+  /* General input styling */
+  input {
+    width: 100%;
+    color: #29006C8C;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    border: 1.5px solid #9D6DCD;
+    border-radius: 18px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  ::placeholder {
+    text-align: left; /* Align placeholder text to the left */
+    color: #888888; /* Optional: Change placeholder text color */
+  }
+  
+  input.error {
+    border-color: #FF0000;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #FF0000;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  /* Eye icon for toggling password visibility */
+  .eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  /* Signup button */
+  .signup-button {
+    background-color: #AB65DA;
+    color: white;
+    width: 50%;
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .eye-icon i {
+    color: #AB65DA; /* Set the color of the eye icon */
+    font-size: 1.2rem; /* Adjust the size as needed */
+    cursor: pointer;
+    transition: color 0.2s ease; /* Optional: smooth transition */
+  }
+  
+  .eye-icon i:hover {
+    color: #6A0DAD; /* Optional: Change color on hover */
+  }
+  
+  /* Login link */
+  .login-link {
+    width: 100%;
+    padding: 10px;
+    color: #FF00B8;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    margin-top: 10px;
+  }
+  
+  /* Button hover effect */
+  .signup-button:hover, .login-link:hover {
+    opacity: 0.8;
+  }
+  
