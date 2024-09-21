@@ -37,7 +37,7 @@ export default function Navbar() {
                                     <div className="position-relative" style={{ maxWidth: '45%', width: '100%' }}>
                                         <input type="search" id="search-field" className="form-control" placeholder="search items" aria-label="Search"  />
                                         <button className="btn search-btn btn-outline-success position-absolute top-0 end-0" type="submit" style={{ height: '100%', marginTop: '2px' }}>
-                                            <img src={searchIcon} alt="search-button" class="search-button"/>
+                                            <img src={searchIcon} alt="search-button" className="search-button"/>
                                         </button>
                                     </div>
                                 </form>
@@ -53,7 +53,7 @@ export default function Navbar() {
                                 </li>
                                 <li className="nav-item ms-3">
                                     <a className="nav-link" href="#" style={{ fontSize: '2rem', marginTop: '0', paddingTop: '0' }}>
-                                        <img src={profile} alt="profile" class="profile-pic"/>
+                                        <img src={profile} alt="profile" className="profile-pic"/>
                                     </a>
                                 </li>
                             </ul>
