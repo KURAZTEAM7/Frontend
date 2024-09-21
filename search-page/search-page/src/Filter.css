@@ -7,7 +7,7 @@ body {
     margin-top: 80px;
     padding-top: 20px;
     width: max-content;
-    height: 1000px;
+    height: 850px;
 }
 .filter-image {
     width: 25px;
@@ -87,7 +87,7 @@ body {
     width: 100%;
     height: 10px;
     border-radius: 5px;
-    background: linear-gradient(to right, #5e00a8, #d4a0ff);
+    background: linear-gradient(to right, #3d006b, #0d00ff);
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
@@ -128,8 +128,8 @@ body {
 .main-rating-label {
     font-size: 1.5rem;
     color: #5e00a8;
-    margin-bottom: 10px;
-    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-left: 10px;
     align-self:self-start;
 }
 
@@ -139,7 +139,7 @@ body {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 .rating-option {

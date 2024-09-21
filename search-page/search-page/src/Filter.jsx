@@ -6,39 +6,27 @@ import fourStars from "./assets/4stars.png";
 import fiveStars from "./assets/5stars.png";
 import "./Filter.css";
 
-export default function Filter() {
-    const [price, setPrice] = useState(600);
-    const [selectedRating, setSelectedRating] = useState("");
+export default function Filter({ onFilterChange }) {
+    const [price, setPrice] = useState(7000);
+    const [rating, setRating] = useState("all");
 
     const handlePriceChange = (event) => {
-        setPrice(event.target.value);
+        const newPrice = event.target.value;
+        setPrice(newPrice);
+        // Send filter updates to the parent component
+        onFilterChange({ price: newPrice, rating });
     };
 
     const handleRatingChange = (event) => {
-        setSelectedRating(event.target.value);
+        const newRating = event.target.value;
+        setRating(newRating);
+        // Send filter updates to the parent component
+        onFilterChange({ price, rating: newRating });
     };
 
     const handleSubmit = () => {
-        const data = {
-            price: price,
-            rating: selectedRating,
-        };
-
-        // Replace the URL with your actual API endpoint
-        fetch("https://api.example.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-        })
-        .then((response) => response.json())
-        .then((data) => {
-            console.log("Success:", data);
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-        });
+        // Optional: Add further logic here if necessary for form submission
+        onFilterChange({ price, rating });
     };
 
     return (
@@ -79,7 +67,7 @@ export default function Filter() {
                         id="5stars"
                         name="rating"
                         value="5"
-                        checked={selectedRating === "5"}
+                        checked={rating === "5"}
                         onChange={handleRatingChange}
                     />
                     <label htmlFor="5stars" className="rating-label">
@@ -95,13 +83,12 @@ export default function Filter() {
                         id="4stars"
                         name="rating"
                         value="4"
-                        checked={selectedRating === "4"}
+                        checked={rating === "4"}
                         onChange={handleRatingChange}
                     />
-                    
                     <label htmlFor="4stars" className="rating-label">
                         <img src={fourStars} alt="4 stars" className="stars-image" />
-                        <div>Above 4 Stars</div>
+                        <span>Above 4 Stars</span>
                     </label>
                 </div>
 
@@ -112,7 +99,7 @@ export default function Filter() {
                         id="3stars"
                         name="rating"
                         value="3"
-                        checked={selectedRating === "3"}
+                        checked={rating === "3"}
                         onChange={handleRatingChange}
                     />
                     <label htmlFor="3stars" className="rating-label">
@@ -128,7 +115,7 @@ export default function Filter() {
                         id="2stars"
                         name="rating"
                         value="2"
-                        checked={selectedRating === "2"}
+                        checked={rating === "2"}
                         onChange={handleRatingChange}
                     />
                     <label htmlFor="2stars" className="rating-label">
@@ -144,7 +131,7 @@ export default function Filter() {
                         id="allRatings"
                         name="rating"
                         value="all"
-                        checked={selectedRating === "all"}
+                        checked={rating === "all"}
                         onChange={handleRatingChange}
                     />
                     <label htmlFor="allRatings" className="rating-label">
