@@ -4,7 +4,7 @@ import twoStars from "./assets/2stars.png";
 import threeStars from "./assets/3stars.png";
 import fourStars from "./assets/4stars.png";
 import fiveStars from "./assets/5stars.png";
-import "./Filter.css";
+import "./styles/Filter.css";
 
 export default function Filter({ onFilterChange }) {
     const [price, setPrice] = useState(7000);

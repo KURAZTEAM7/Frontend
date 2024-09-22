@@ -3,6 +3,8 @@ import Navbar from './Navbar.jsx';
 import Filter from './Filter.jsx';
 import Card from './card.jsx'; // Assuming Card component is ready
 
+
+
 export default function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [apiResults, setApiResults] = useState([]);
@@ -49,7 +51,7 @@ export default function App() {
       {/* Card display section */}
       <div className="card-display">
         {isLoading ? (
-          <p>Loading...</p>
+          <p className="waiting">Loading...</p>
         ) : apiResults.length > 0 ? (
           apiResults.map((item) => (
             <Card
@@ -62,7 +64,7 @@ export default function App() {
             />
           ))
         ) : (
-          <p>No results found.</p>
+          <p className="waiting">No results found for "{searchTerm}".</p>
         )}
       </div>
     </div>

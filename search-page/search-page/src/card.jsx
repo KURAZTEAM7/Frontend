@@ -1,6 +1,6 @@
 import React from 'react';
 import star from './assets/star.png';  // Path to star image
-import './Card.css';  // Assume CSS for styling
+import './styles/Card.css';  // Assume CSS for styling
 
 export default function Card ({ image, title, description, rating, price }) {
     return (

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./styles/Navbar.css";
 import logo from "./assets/logos.png";
 import profile from "./assets/profile-icon.png";
 import searchIcon from "./assets/search-icon.png";
 
-// Accept `onSearch` as a prop from the parent component (App.jsx)
 export default function Navbar({ onSearch }) {
     const [searchTerm, setSearchTerm] = useState("");  // Declare state for search term
 
@@ -21,7 +20,7 @@ export default function Navbar({ onSearch }) {
             <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
                 <div className="container-fluid">
                     {/* Logo */}
-                    <a className="navbar-brand logos" href="#">
+                    <a className="navbar-brand logos" href=".wishlist.html">
                         <img src={logo} alt="logo" />
                     </a>
 
