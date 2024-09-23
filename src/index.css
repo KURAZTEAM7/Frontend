@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     background-color: #e9ecef; /* Background color */
 }
 
@@ -86,3 +87,17 @@ body {
     border-radius: 10px;
     
   }
+=======
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+>>>>>>> b05d122b731b663562af82c2b9b990d7074b4b8d
