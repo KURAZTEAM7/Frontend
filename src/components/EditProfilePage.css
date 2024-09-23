@@ -1,0 +1,101 @@
+/* Full-page background with no padding/margin */
+.edit-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url('../assets/back.jpg'); /* Update to your actual image path */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9a72b0; /* Poppins font */
+}
+
+/* Profile card styling */
+.edit-profile-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+}
+
+/* Header styling */
+.edit-profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edit-profile-header h4 {
+    color: #bd8bd8;
+}
+
+/* Close button */
+.close-button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    font-size: 20px;
+}
+
+/* Form labels */
+form label {
+    color: #9a72b0;
+}
+
+/* Form inputs */
+form input {
+    border-radius: 10px;
+    border: 2px solid #6e318f; /* Add border for inputs */
+    background-color: #89888b; /* Light gray background */
+    padding: 10px; /* Add padding for better user experience */
+}
+
+/* Password input container */
+.password-input-container {
+    position: relative;
+}
+
+/* Eye icon positioning */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Save button with hover effect */
+.edit-profile-card .save-button {
+    margin-top: 20px;
+    background-color: transparent; /* Start with transparent */
+    border: 2px solid red; /* Red border */
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 60px;
+    width: 60%; /* Adjust width as necessary */
+    font-size: 16px;
+    font-weight: bold;
+    color: red; /* Text color red */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* On hover, change background to red and keep text white */
+.edit-profile-card .save-button:hover {
+    background-color: red; /* Full red background on hover */
+    border-color: red; /* Ensure border remains red */
+    color: white; /* Change text color to white */
+}
+
+@media (max-width: 768px) {
+    .edit-profile-card {
+        padding: 20px;
+    }
+}
