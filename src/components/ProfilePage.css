@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #F6E3FF; /* Background color */
+    font-family: 'Poppins', sans-serif; /* Set font family */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F6E3FF; /* Navbar background */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-title {
+    color: #400090; /* Title color */
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent; /* Default border */
+    transition: transform 0.3s, border 0.3s; /* Transition for hover effects */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Hover effect for profile picture */
+    border: 2px solid #400090; /* Border color on hover */
+}
+
+.profile-card {
+    width: 45rem; /* Card width */
+    height: auto; /* Auto height to accommodate content */
+    padding: 49px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex; /* Center contents */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center contents horizontally */
+}
+
+.profile-info {
+    display: flex;
+    align-items: center; /* Align profile icon and text */
+    margin-bottom: 20px; /* Space below profile info */
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+    margin-bottom: 115px;
+}
+
+.profile-text {
+    text-align: left; 
+    color: #400090; /* Bold text color */
+    font-size: 20px;
+}
+
+.profile-text strong {
+    color: #883ae9; /* Bold text color */
+    font-size: 25px; /* Font size for labels */
+}
+
+.edit-button {
+    width: 40%; /* Full width */
+    border: 2px solid red; /* Red border */
+    margin-top: 15px;
+    margin-bottom: 10px; /* Space above the button */
+    font-size: 20px; /* Font size */
+    padding: 5px;
+    margin-left: 8rem;
+}
+
+.edit-button:hover {
+    background-color: red; /* Full red on hover */
+    color: white; /* Change text color on hover */
+}
+
+.btn.upgrade-button {
+    background-color: #6e16da; /* Default background color */
+    color: rgb(233, 223, 223); /* Text color */
+    border: none; /* No border */
+    font-size: 20px; /* Font size */
+    margin-top: 15px; /* Margin for button */
+    width: 75%; /* Custom width */
+    transition: background-color 0.3s; 
+    /* Smooth transition for hover */
+    margin-top: 1rem;
+    margin-left: 50px;
+}
+
+.btn.upgrade-button:hover {
+    background-color: rgb(170, 28, 28); /* Change color on hover */
+}
+
+/* Modal Customizations */
+.modal-body {
+    background-color: gray; /* Full gray background for modal */
+}
+
+.tin-input {
+    width: 100%; /* Full width */
+    padding: 8px; /* Padding */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #400090; /* Border color */
+}

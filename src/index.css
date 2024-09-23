@@ -1,4 +1,93 @@
 body {
+<<<<<<< HEAD
+    background-color: #e9ecef; /* Background color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Navbar background */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+    color: #400090; /* Title color */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('https://via.placeholder.com/50'); /* Replace with actual profile picture */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Hover effect for profile picture */
+}
+
+.profile-card {
+    width: 30rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('https://via.placeholder.com/100'); /* Replace with actual profile icon */
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 20px;
+}
+
+.profile-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.email-icon, .password-icon {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.edit-button {
+    width: 100%;
+    border: 2px solid red; /* Red border */
+}
+
+.edit-button:hover {
+    background-color: red; /* Full red on hover */
+    color: white; /* Change text color on hover */
+}
+
+.upgrade-button {
+    margin-top: 15px; /* Space above upgrade button */
+}
+
+.upgrade-link {
+    color: #400090; /* Upgrade link color */
+}
+
+.upgrade-link:hover {
+    color: red; /* Change color on hover */
+}
+  
+  .edit-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+=======
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +100,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+>>>>>>> b05d122b731b663562af82c2b9b990d7074b4b8d

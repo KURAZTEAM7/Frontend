@@ -1,0 +1,281 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FBF3FF;
+    color: #400090; /* Default text color */
+    margin: 0;
+    padding-top: 80px;
+}
+
+.header {
+    z-index: 1000;
+    background-color: #EAD1FE; /* Navbar background color */
+    padding: 0.5rem; /* Smaller navbar size */
+}
+
+.logo {
+    font-size: 40px; /* Adjusted logo size */
+    font-weight: bold;
+    color: #400090; /* Logo color */
+}
+
+.search-bar {
+    width: 100%; /* Makes the search bar stretch */
+    max-width: 600px; /* Limits maximum width */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.search-bar input {
+    width: 100%; /* Fill available space */
+    padding-right: 40px; /* Space for the search icon */
+    border: 2px solid #400090; /* Border color */
+    font-size: 16px; /* Consistent font size */
+    color: #400090; /* Text color */
+}
+
+.input-group-text {
+    position: absolute;
+    right: 10px; /* Positioning the icon */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    color: #400090; /* Search icon color */
+    pointer-events: auto; /* Allow pointer events */
+    font-size: 20px; /* Adjust icon size */
+}
+
+.header-icons span {
+    color: #400090;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.header-icons span:hover {
+    color: red; /* Hover effect for icons */
+}
+
+.profile-icon {
+    font-size: 24px;
+    color: #400090;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: red; 
+}
+
+.product-info {
+    margin-top: 80px; /* Adjust for fixed header */
+}
+
+.product-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #400090; /* Title color */
+}
+
+.product-price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #400090; /* Price color */
+}
+
+.product-description {
+    font-size: 16px;
+    color: #400090; /* Change to #400090 for consistency */
+}
+
+.about-item h3 {
+    color: #400090;
+    font-weight: bold;
+}
+
+.feedback-container {
+    position: relative;
+}
+
+/* Button styles */
+.custom-btn, .submit-feedback-btn, .contact-btn {
+    background-color: #400090;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-btn:hover, .submit-feedback-btn:hover {
+    background-color: red; /* Hover color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Shadow effect on hover */
+}
+
+.contact-btn {
+    background-color: rgb(243, 238, 238); /* Gray background */
+    color: red; 
+    border: 2px solid red; /* Red border */
+}
+
+.contact-btn:hover {
+    background-color: red; /* Change background to red on hover */
+    color: white; /* Change text color to white */
+}
+
+.rating-section {
+    margin-top: 20px;
+}
+
+.rating-stars {
+    display: flex;
+    gap: 5px;
+}
+
+.rating-stars .star {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.rating-stars .star:hover,
+.rating-stars .star.active {
+    color: #f1c40f;
+}
+
+.similar-items {
+    margin-top: 20px;
+}
+
+.items-list {
+    display: flex; /* Flexbox for horizontal alignment */
+    padding: 10px 0; /* Some padding */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+/* Custom scrollbar styles */
+.items-list::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+.items-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.items-list::-webkit-scrollbar-thumb {
+    background: #400090; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.items-list::-webkit-scrollbar-thumb:hover {
+    background: #6a0dad; /* Darker color on hover */
+}
+
+/* For Firefox */
+.items-list {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #400090 #f1f1f1; /* Thumb and track color */
+}
+
+.item {
+    min-width: 300px; /* Set a larger minimum width for items */
+    max-width: 100%; /* Allow items to take full width */
+    flex: 1; /* Allow items to grow */
+    text-align: center;
+    border: 1px solid #400090; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* Card background color */
+    margin-right: 15px; /* Space between cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for hover */
+    padding: 5px; /* Padding inside the card */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    z-index: 10; /* Bring hovered item to the front */
+}
+
+.item img {
+    width: 100%; /* Make images fill the entire card width */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 10px; /* Round top corners */
+    border-top-right-radius: 10px; /* Round top corners */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.item p {
+    margin: 5px 0; /* Space between image and text */
+    color: #400090; /* Text color */
+    font-size: 12px; /* Smaller font for item text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .logo {
+        font-size: 36px; /* Smaller logo size */
+    }
+    
+    .product-title {
+        font-size: 28px; /* Smaller title size */
+    }
+    
+    .product-price {
+        font-size: 24px; /* Smaller price size */
+    }
+    
+    .product-description {
+        font-size: 14px; /* Smaller description size */
+    }
+}
+
+@media (max-width: 992px) {
+    .search-bar input {
+        font-size: 14px; /* Smaller font size */
+    }
+    
+    .custom-btn, .submit-feedback-btn, .contact-btn {
+        font-size: 14px; /* Smaller button size */
+        padding: 8px 16px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-info {
+        margin-top: 40px; /* Less margin for smaller screens */
+    }
+    
+    .product-title, .product-price, .product-description {
+        font-size: 18px; /* Standardize smaller sizes */
+    }
+    
+    .header-icons span, .profile-icon {
+        font-size: 20px; /* Smaller icon sizes */
+    }
+    
+    .item {
+        min-width: 150px; /* Smaller item width */
+        max-width: 150px; /* Limit the maximum width */
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 28px; /* Even smaller logo size */
+    }
+
+    .search-bar {
+        max-width: 100%; /* Full width on small screens */
+    }
+    
+    .header-icons span {
+        font-size: 16px; /* Smaller header icons */
+    }
+
+    .rating-stars .star {
+        font-size: 18px; /* Smaller star size */
+    }
+}
