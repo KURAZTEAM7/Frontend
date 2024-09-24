@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css';
 import { useNavigate } from 'react-router-dom';
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import FontAwesome CSS
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Signup = () => {
   const [form, setForm] = useState({
@@ -13,19 +13,18 @@ const Signup = () => {
     confirmPassword: ''
   });
 
-  const [errors, setErrors] = useState({
-    firstName: '',
-    email: '',
-    password: '',
-    confirmPassword: ''
-  });
-
+  const [errors, setErrors] = useState({});
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+  const [passwordStrength, setPasswordStrength] = useState('');
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    if (e.target.name === 'password') {
+      evaluatePasswordStrength(e.target.value);
+    }
   };
 
   const togglePasswordVisibility = () => {
@@ -34,6 +33,18 @@ const Signup = () => {
 
   const toggleConfirmPasswordVisibility = () => {
     setConfirmPasswordVisible(!confirmPasswordVisible);
+  };
+
+  const evaluatePasswordStrength = (password) => {
+    let strength = '';
+    if (password.length < 6) {
+      strength = 'Poor';
+    } else if (password.length < 8 || !/\d/.test(password) || !/[A-Z]/.test(password)) {
+      strength = 'Good';
+    } else {
+      strength = 'Strong';
+    }
+    setPasswordStrength(strength);
   };
 
   const validate = () => {
@@ -51,6 +62,9 @@ const Signup = () => {
     if (!form.password) {
       errors.password = 'Password is required';
       isValid = false;
+    } else if (form.password.length < 6) {
+      errors.password = 'Password must be at least 6 characters long';
+      isValid = false;
     }
     if (form.password !== form.confirmPassword) {
       errors.confirmPassword = 'Passwords do not match';
@@ -61,10 +75,29 @@ const Signup = () => {
     return isValid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log('Form submitted', form);
+      setLoading(true);
+      try {
+        const response = await fetch('/api/signup', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(form),
+        });
+
+        const responseData = await response.json();
+        if (response.ok) {
+          navigate('/login');
+        } else {
+          setErrors({ email: responseData.message || 'Signup failed. Please try again.' });
+        }
+      } catch (error) {
+        console.error('Signup error:', error);
+        setErrors({ email: 'An unexpected error occurred. Please try again.' });
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
@@ -87,7 +120,7 @@ const Signup = () => {
               <input
                 type="text"
                 name="firstName"
-                placeholder="first name"
+                placeholder="First name"
                 value={form.firstName}
                 onChange={handleChange}
                 className={errors.firstName ? 'error' : ''}
@@ -95,14 +128,14 @@ const Signup = () => {
               <input
                 type="text"
                 name="middleName"
-                placeholder="middle name"
+                placeholder="Middle name"
                 value={form.middleName}
                 onChange={handleChange}
               />
               <input
                 type="text"
                 name="lastName"
-                placeholder="last name"
+                placeholder="Last name"
                 value={form.lastName}
                 onChange={handleChange}
               />
@@ -112,7 +145,7 @@ const Signup = () => {
               <input
                 type="text"
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 value={form.email}
                 onChange={handleChange}
                 className={errors.email ? 'error' : ''}
@@ -124,33 +157,36 @@ const Signup = () => {
               <input
                 type={passwordVisible ? 'text' : 'password'}
                 name="password"
-                placeholder="password"
+                placeholder="Password"
                 value={form.password}
                 onChange={handleChange}
                 className={errors.password ? 'error' : ''}
               />
               {errors.password && <span className="error-message">{errors.password}</span>}
               <span className="eye-icon" onClick={togglePasswordVisibility}>
-                <i className={`fas ${passwordVisible ? 'fa-eye-slash' : 'fa-eye'}`}></i> {/* FontAwesome eye icon */}
+                <i className={`fas ${passwordVisible ? 'fa-eye-slash' : 'fa-eye'}`}></i>
               </span>
+              {form.password && <span className="password-strength">{passwordStrength}</span>}
             </div>
 
             <div className="input-container">
               <input
                 type={confirmPasswordVisible ? 'text' : 'password'}
                 name="confirmPassword"
-                placeholder="confirm password"
+                placeholder="Confirm password"
                 value={form.confirmPassword}
                 onChange={handleChange}
                 className={errors.confirmPassword ? 'error' : ''}
               />
               {errors.confirmPassword && <span className="error-message">{errors.confirmPassword}</span>}
               <span className="eye-icon" onClick={toggleConfirmPasswordVisibility}>
-                <i className={`fas ${confirmPasswordVisible ? 'fa-eye-slash' : 'fa-eye'}`}></i> {/* FontAwesome eye icon */}
+                <i className={`fas ${confirmPasswordVisible ? 'fa-eye-slash' : 'fa-eye'}`}></i>
               </span>
             </div>
 
-            <button type="submit" className="signup-button">Sign Up</button>
+            <button type="submit" className="signup-button" disabled={loading}>
+              {loading ? 'Signing Up...' : 'Sign Up'}
+            </button>
           </form>
 
           <button onClick={handleLogin} className="login-link">
