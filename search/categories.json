@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "slug": "electronics",
+    "items": [
+      {
+        "id": 101,
+        "name": "Samsung Galaxy Z Fold",
+        "brand": "Samsung",
+        "price": "$1799",
+        "image": "https://picsum.photos/319/289",
+        "color": "Phantom Black",
+        "retailer": "TechMart"
+      },
+      {
+        "id": 102,
+        "name": "Apple MacBook Pro",
+        "brand": "Apple",
+        "price": "$1999",
+        "image": "https://picsum.photos/319/289",
+        "detail": "This MacBook Pro is equipped with the M1 chip for powerful performance. It is perfect for creative professionals.",
+        "color": "Space Gray",
+        "retailer": "Apple Store"
+      },
+      {
+        "id": 103,
+        "name": "Sony WH-1000XM5",
+        "brand": "Sony",
+        "price": "$349",
+        "image": "https://picsum.photos/319/289",
+        "detail": "Experience industry-leading noise cancellation with the Sony WH-1000XM5. These over-ear headphones deliver high-quality sound.",
+        "color": "Silver",
+        "retailer": "BestBuy"
+      },
+      {
+        "id": 104,
+        "name": "Garmin Venu 2",
+        "brand": "Garmin",
+        "price": "$399",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Garmin Venu 2 is a fitness-focused smartwatch with advanced health monitoring features. It is water-resistant and stylish.",
+        "color": "Slate",
+        "retailer": "Garmin Store"
+      },
+      {
+        "id": 105,
+        "name": "Apple iPad Pro 12.9",
+        "brand": "Apple",
+        "price": "$1099",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The iPad Pro 12.9 features a Liquid Retina XDR display and supports Apple Pencil for unmatched productivity.",
+        "color": "Silver",
+        "retailer": "Apple Store"
+      },
+      {
+        "id": 106,
+        "name": "JBL Charge 5",
+        "brand": "JBL",
+        "price": "$179",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The JBL Charge 5 delivers powerful sound and doubles as a power bank. It has IP67 water and dust resistance.",
+        "color": "Camo",
+        "retailer": "JBL Official"
+      },
+      {
+        "id": 107,
+        "name": "Canon EOS R5",
+        "brand": "Canon",
+        "price": "$3899",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Canon EOS R5 is a full-frame mirrorless camera offering 8K video recording and exceptional photo quality.",
+        "color": "Black",
+        "retailer": "Canon Store"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Home Appliances",
+    "slug": "home-appliances",
+    "items": [
+      {
+        "id": 201,
+        "name": "Panasonic Microwave NN-SN966S",
+        "brand": "Panasonic",
+        "price": "$229",
+        "image": "https://picsum.photos/319/289",
+        "detail": "This microwave oven provides 1250W cooking power for quick and even heating. It comes with an easy-to-use control panel.",
+        "color": "Stainless Steel",
+        "retailer": "HomeDepot"
+      },
+      {
+        "id": 202,
+        "name": "LG French Door Refrigerator",
+        "brand": "LG",
+        "price": "$2999",
+        "image": "https://picsum.photos/319/289",
+        "detail": "With a large capacity, this LG refrigerator offers more space for your groceries. It has smart features and is energy-efficient.",
+        "color": "Matte Black",
+        "retailer": "Lowes"
+      },
+      {
+        "id": 203,
+        "name": "Vitamix 5200 Blender",
+        "brand": "Vitamix",
+        "price": "$399",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Vitamix 5200 is a high-performance blender perfect for smoothies, soups, and sauces. It has variable speed control.",
+        "color": "Black",
+        "retailer": "Target"
+      },
+      {
+        "id": 204,
+        "name": "Honeywell Portable Air Conditioner",
+        "brand": "Honeywell",
+        "price": "$599",
+        "image": "https://picsum.photos/319/289",
+        "detail": "This portable air conditioner cools large rooms quickly. It features an easy installation kit and a washable filter.",
+        "color": "White",
+        "retailer": "Walmart"
+      },
+      {
+        "id": 205,
+        "name": "Bosch 300 Series Dishwasher",
+        "brand": "Bosch",
+        "price": "$899",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Bosch 300 Series Dishwasher provides quiet operation and excellent cleaning power. It is Energy Star certified.",
+        "color": "Stainless Steel",
+        "retailer": "BestBuy"
+      },
+      {
+        "id": 206,
+        "name": "De'Longhi Magnifica Coffee Machine",
+        "brand": "De'Longhi",
+        "price": "$899",
+        "image": "https://picsum.photos/319/289",
+        "detail": "This coffee machine offers a built-in grinder and frother, perfect for espresso and cappuccino lovers.",
+        "color": "Silver",
+        "retailer": "Amazon"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Books",
+    "slug": "books",
+    "items": [
+      {
+        "id": 301,
+        "name": "The Great Gatsby",
+        "brand": "Scribner",
+        "price": "$10",
+        "image": "https://picsum.photos/319/289",
+        "detail": "F. Scott Fitzgerald's classic novel, The Great Gatsby, explores themes of wealth, love, and the American Dream.",
+        "color": "N/A",
+        "retailer": "Bookstore Inc."
+      },
+      {
+        "id": 302,
+        "name": "A Brief History of Time",
+        "brand": "Bantam",
+        "price": "$15",
+        "image": "https://picsum.photos/319/289",
+        "detail": "Stephen Hawking explains the origins of the universe in this widely read science book. A must-read for curious minds.",
+        "color": "N/A",
+        "retailer": "Barnes & Noble"
+      },
+      {
+        "id": 303,
+        "name": "The Diary of a Young Girl",
+        "brand": "Penguin",
+        "price": "$12",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Diary of Anne Frank offers a poignant look at the Holocaust through the eyes of a young Jewish girl in hiding.",
+        "color": "N/A",
+        "retailer": "Amazon Books"
+      },
+      {
+        "id": 304,
+        "name": "Meditations",
+        "brand": "Modern Library",
+        "price": "$18",
+        "image": "https://picsum.photos/319/289",
+        "detail": "Marcus Aurelius' personal reflections on Stoic philosophy offer timeless wisdom for living a life of virtue.",
+        "color": "N/A",
+        "retailer": "ThriftBooks"
+      },
+      {
+        "id": 305,
+        "name": "The Lord of the Rings Box Set",
+        "brand": "HarperCollins",
+        "price": "$45",
+        "image": "https://picsum.photos/319/289",
+        "detail": "J.R.R. Tolkien's legendary fantasy series comes in a beautifully packaged box set, including all three books.",
+        "color": "N/A",
+        "retailer": "Books-A-Million"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fashion",
+    "slug": "fashion",
+    "items": [
+      {
+        "id": 401,
+        "name": "Nike Air Force 1",
+        "brand": "Nike",
+        "price": "$99",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Nike Air Force 1 is a timeless sneaker, known for its classic design and comfort.",
+        "color": "White",
+        "retailer": "Nike Store"
+      },
+      {
+        "id": 402,
+        "name": "Levi's 501 Original Jeans",
+        "brand": "Levi's",
+        "price": "$59",
+        "image": "https://picsum.photos/319/289",
+        "detail": "Levi's 501 jeans offer a classic fit and durable design, ideal for casual wear.",
+        "color": "Indigo",
+        "retailer": "Levi's Store"
+      },
+      {
+        "id": 403,
+        "name": "Ray-Ban Aviator Sunglasses",
+        "brand": "Ray-Ban",
+        "price": "$150",
+        "image": "https://picsum.photos/319/289",
+        "detail": "These iconic sunglasses feature a lightweight frame and UV protection, perfect for any season.",
+        "color": "Gold",
+        "retailer": "Sunglass Hut"
+      },
+      {
+        "id": 404,
+        "name": "Adidas Ultraboost Running Shoes",
+        "brand": "Adidas",
+        "price": "$180",
+        "image": "https://picsum.photos/319/289",
+        "detail": "The Adidas Ultraboost shoes provide superior cushioning and support, making them perfect for running and everyday wear.",
+        "color": "Black",
+        "retailer": "Adidas Store"
+      },
+      {
+        "id": 405,
+        "name": "Gucci GG Marmont Bag",
+        "brand": "Gucci",
+        "price": "$2,150",
+        "image": "https://picsum.photos/319/289",
+        "detail": "This luxury shoulder bag from Gucci features the signature GG logo and fine craftsmanship.",
+        "color": "Black",
+        "retailer": "Gucci Boutique"
+      }
+    ]
+  }
+]

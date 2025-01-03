@@ -1,0 +1,84 @@
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+.sidebar{
+    color: black;
+}
+
+.logos img{
+    width: 85%;
+    height: auto;
+    padding-left: 20px;
+}
+
+.search-btn{
+    border: none;
+    color: #29006C;
+}
+
+.search-btn:hover{
+    border: none;
+    color: #29006C;
+    background-color: inherit;
+    border-radius: 100px;
+    
+}
+
+input::placeholder {
+    color:  #400090B0;
+    opacity: 10; 
+  }
+
+.nav-link {
+    color: #29006C !important;
+   
+  }
+ 
+.profile-pic {
+    display: flex;
+    width: 40px;
+    align-self: center;
+}
+
+#search-field {
+    height: 45px;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border-color: #29006C;
+    width: 100%;
+    font-size: 20px;
+}
+
+#search-field::placeholder {
+    font-size: 20px;
+    color:#29006C;
+    font-weight: 200;
+}
+
+#search-field:focus {
+    box-shadow: none;
+    border-width: 3px;
+}
+
+.search-button {
+    width: 30px;
+    transform: translateX(-4px);
+    display: flex;
+    align-self: center;
+}
+
+.nav-link {
+    transition: scale 0.2s ease;
+}
+
+.nav-link:hover {
+    scale: 105%;
+    transition: scale 0.2s ease;
+}
+
+#search-div{
+    margin-left: 50px;
+}

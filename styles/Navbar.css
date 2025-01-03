@@ -1,0 +1,312 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+    color: black;
+}
+
+.logos img {
+    width: 85%;
+    height: auto;
+    padding-left: 20px;
+}
+
+.nav-bar {
+    z-index: 100;
+    position: relative;
+}
+
+/* Remove stroke from search button */
+.search-btn {
+    border: none;
+    background-color: transparent;
+    color: #29006C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn:hover {
+    border: none;
+    background-color: inherit;
+    color: #29006C;
+    border-radius: 100px;
+}
+
+input::placeholder {
+    color: #400090B0;
+    opacity: 10;
+}
+
+.nav-link {
+    color: #29006C !important;
+}
+
+.profile-pic {
+    display: flex;
+    width: 40px;
+    align-self: center;
+}
+
+/* Adjust search bar width and padding */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#search-field {
+    height: 45px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #29006C;
+    width: 300px;
+}
+
+#search-field::placeholder {
+    font-size: 18px;
+    color: #29006C;
+    font-weight: 200;
+}
+
+#search-field:focus {
+    box-shadow: none;
+    border-width: 2px;
+}
+
+.search-btn {
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button {
+    width: 22px;
+    height: 22px;
+}
+
+/* Modal overlay styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.license-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.submit-license {
+    width: 100%;
+    padding: 10px;
+    background-color: #29006C;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-license:hover {
+    background-color: #1d004c;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Profile Popup Styling */
+.profile-popup {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upgrade-button, .logout-button {
+    background: #29006C;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upgrade-button:hover, .logout-button:hover {
+    background: #1d004c;
+}
+
+/* Success Popup Styling */
+.success-popup {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 400px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit-license {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.upgrade-button, .logout-button, .popup-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.upgrade-button:hover, .logout-button:hover, .popup-button:hover {
+    background-color: #0056b3;
+}
+
+.license-input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-popup ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#description {
+    background-color: white;
+    color:rgb(135, 0, 224);
+    font-size: 14px;
+}
+
+
+.vendor-success-message {
+    position: fixed;
+    top: 100px; /* Initially hidden above the view */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 10000;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Animation for sliding in and out */
+.vendor-success-message.active {
+    top: 20px; /* Slides down to this position */
+    opacity: 1; /* Fully visible */
+}
+
+.vendor-success-message.hidden {
+    top: -50px; /* Slides back up after 3 seconds */
+    opacity: 0;
+}
