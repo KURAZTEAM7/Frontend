@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.category-list {
+  margin: 0 30px;  /* Left and right margins of 30px */
+  padding-top: 40px;
+  overflow-x: hidden; /* Prevent horizontal overflow for this container */
+}
+
+.category-section {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  max-width:1650px;
+}
+
+h2 {
+  color: #7f53d6 !important;
+  font-size: 24px;
+  padding-left: 0px; /* Align the label of each category to the left */
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.category-items {
+  display: flex;
+  gap: 20px; /* Space between cards */
+  overflow-x: auto; /* Enable horizontal scrolling for the items */
+  white-space: nowrap; /* Prevent wrapping */
+  padding-bottom: 20px; /* Add padding for better scroll visibility */
+  scroll-behavior: smooth; /* Smooth scroll effect */
+}
+
+.category-items::-webkit-scrollbar {
+  height: 0px; /* Custom height for scrollbar */
+}
+
+.category-items::-webkit-scrollbar-thumb {
+  background-color: #7f53d6; /* Scrollbar thumb color */
+  border-radius: 10px;
+}
+
+.item-card {
+  flex: 0 0 auto; /* Ensure the cards don't shrink */
+  width: 320px; /* Set a consistent width */
+  border: 1px solid #29006c; /* 1px stroke with color #29006c */
+  border-radius: 15px;
+  overflow:hidden;
+  padding: 0px 0px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card-img-to {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.item-image {
+  width: 100%; /* Fixed width */
+  height: 289px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fits the container without distortion */
+  border-radius: 8px;
+}
+
+.item-info {
+  color: #5a2db5;
+  font-size: larger;
+}
+
+.item-rating {
+  color: #9c27b0;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #6a1b9a;
+  margin-top: auto;
+}
+
+.space {
+  padding: 20px 20px;
+}
