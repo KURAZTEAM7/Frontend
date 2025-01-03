@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# PRICO - Team Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PRICO is a collaborative e-commerce platform project designed to provide users with a trustworthy price comparison service. The platform enables verified business owners to list their items, allowing users to compare prices across multiple vendors and find the best deals.
 
-## Available Scripts
+## Project Teams
 
-In the project directory, you can run:
+Our team is organized into specialized groups to ensure a smooth development process and high-quality results:
 
-### `npm start`
+### Frontend Team
+The frontend team is responsible for designing and implementing the user interface to deliver a seamless experience. Members include:
+- **Amanuel Dagnachew Abebe**
+- **Amanuel Mandefro Aslake**
+- **Amanuel Aayana**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Mobile Team
+The mobile team focuses on building the mobile application for PRICO using Flutter, ensuring users have a responsive and accessible platform on the go. Member:
+- **Amanuel Solomon**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Backend Team
+The backend team develops and maintains the server-side logic and database operations using Laravel. Member:
+- **Bamanuel Tesfaye**
 
-### `npm test`
+## Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Price Comparison:** Users can compare prices for similar products from different vendors.
+- **Verified Listings:** Only verified businesses can list their products, ensuring reliability.
+- **Mobile Accessibility:** A dedicated mobile application for users to access the platform anytime, anywhere.
+- **Scalable Backend:** Built with Laravel for efficient data handling and API development.
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:**
+  - React.js
+  - Bootstrap
+  - CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Mobile:**
+  - Flutter
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Backend:**
+  - Laravel
 
-### `npm run eject`
+- **Database:**
+  - MySQL
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To set up the project locally, follow these steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/prico.git
+   cd prico
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Frontend Setup:**
+   Navigate to the `frontend` directory and install dependencies:
+   ```bash
+   cd frontend
+   npm install
+   ```
+   Start the frontend development server:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+3. **Mobile Setup:**
+   Navigate to the `mobile` directory and run the Flutter application:
+   ```bash
+   cd mobile
+   flutter pub get
+   flutter run
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. **Backend Setup:**
+   Navigate to the `backend` directory and configure the Laravel application:
+   ```bash
+   cd backend
+   composer install
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   Set up the database and run migrations:
+   ```bash
+   php artisan migrate
+   php artisan serve
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+PRICO is licensed under the [GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html). Feel free to use, modify, and distribute this project under the terms of the license.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact
 
-### Analyzing the Bundle Size
+For any inquiries or contributions, feel free to reach out to us:
+- **Email:** : Amanuelabebe115@gmail.com
+- **GitHub Issues:** Submit an issue on this repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for supporting PRICO, a collaborative effort to bring transparent and efficient price comparison to user
